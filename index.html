@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Portfolio de Nizar Elkandoussi, étudiant en cycle préparatoire en génie civil."
+  />
+  <meta name="theme-color" content="#101a17" />
+  <title>Nizar Elkandoussi — Portfolio Génie Civil</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="page-progress" aria-hidden="true"></div>
+  <div class="background-grid" aria-hidden="true"></div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Retour en haut de page">
+      <span class="brand-mark">N<span>.</span></span>
+      <span class="brand-name">Nizar <strong>Elkandoussi</strong></span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Ouvrir le menu"
+      aria-expanded="false"
+      aria-controls="site-nav"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+      <a href="#about">À propos</a>
+      <a href="#skills">Compétences</a>
+      <a href="#projects">Projets</a>
+      <a href="#contact" class="nav-contact">Me contacter <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow reveal">
+          <span class="status-dot"></span>
+          Étudiant en cycle préparatoire · Génie civil
+        </p>
+
+        <h1 class="reveal">
+          Construire avec
+          <span class="title-highlight">méthode.</span>
+          Penser
+          <span class="title-outline">durable.</span>
+        </h1>
+
+        <p class="hero-description reveal">
+          Je suis Nizar Elkandoussi, étudiant en première année de cycle
+          préparatoire. Je développe mes bases scientifiques et techniques
+          avec l’ambition de contribuer aux projets qui façonnent notre cadre
+          de vie.
+        </p>
+
+        <div class="hero-actions reveal">
+          <a class="button button-primary" href="#projects">
+            Découvrir mon parcours <span>↓</span>
+          </a>
+          <a
+            class="button button-ghost"
+            href="https://www.linkedin.com/in/nizar-elkandoussi-9864162b2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn <span>↗</span>
+          </a>
+        </div>
+
+        <div class="hero-meta reveal">
+          <span>01 — Curieux</span>
+          <span>02 — Rigoureux</span>
+          <span>03 — En construction</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-label="Illustration architecturale">
+        <div class="visual-topline">
+          <span>ÉTUDE Nº 001</span>
+          <span>CASABLANCA, MA</span>
+        </div>
+
+        <div class="blueprint">
+          <div class="blueprint-label label-top">STRUCTURE / ÉQUILIBRE</div>
+          <div class="blueprint-label label-bottom">IDÉE → CONCEPTION → RÉALITÉ</div>
+
+          <svg
+            class="building-svg"
+            viewBox="0 0 500 520"
+            role="img"
+            aria-labelledby="building-title"
+          >
+            <title id="building-title">Illustration abstraite d'un bâtiment moderne</title>
+            <defs>
+              <linearGradient id="buildingFill" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#b8e7c6" stop-opacity=".88" />
+                <stop offset="100%" stop-color="#7fc69a" stop-opacity=".12" />
+              </linearGradient>
+            </defs>
+            <path class="building-shadow" d="M108 432 294 330l104 60-185 106z" />
+            <path class="building-side" d="m216 150 182 102v198L216 348z" />
+            <path class="building-front" d="m108 210 108-60v198l-108 60z" />
+            <path class="building-roof" d="m108 210 108-60 182 102-108 61z" />
+            <path class="building-cut" d="m245 170 130 73-62 35-130-73z" />
+            <path class="building-line" d="M143 228v139M180 207v139M216 178v170" />
+            <path class="building-line" d="m253 171 145 81M253 214l145 81M253 257l145 81M253 300l145 81" />
+            <path class="building-line" d="M290 252v168M327 272v168M362 294v168" />
+            <path class="ground-line" d="M55 449h390" />
+            <path class="dimension-line" d="M83 208V386M77 208h12M77 386h12" />
+            <text x="62" y="306" class="svg-dimension">12 m</text>
+          </svg>
+
+          <div class="visual-coordinate">
+            <span class="coordinate-cross">+</span>
+            <span>33° 34' N<br />7° 35' W</span>
+          </div>
+        </div>
+
+        <div class="visual-caption">
+          <span>ÉTUDIER LES STRUCTURES, IMAGINER LES ESPACES.</span>
+          <span>01 / 03</span>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Défiler vers la section À propos">
+        <span class="scroll-line"></span>
+        <span>FAIRE DÉFILER</span>
+      </a>
+    </section>
+
+    <section class="about section-shell section-space" id="about">
+      <div class="section-heading reveal">
+        <p class="section-index">01 / À PROPOS</p>
+        <h2>Les fondations<br />de mon parcours.</h2>
+      </div>
+
+      <div class="about-content reveal">
+        <p class="about-lead">
+          Le génie civil m’intéresse parce qu’il relie
+          <span>la réflexion, la technique et l’impact concret.</span>
+        </p>
+        <p class="body-copy">
+          En première année de cycle préparatoire, je consolide mes connaissances
+          en mathématiques, physique et sciences de l’ingénieur. J’aime comprendre
+          comment les idées deviennent des structures fiables, fonctionnelles
+          et pensées pour durer.
+        </p>
+        <p class="body-copy">
+          Ce portfolio est un espace pour documenter mon apprentissage, mes
+          réalisations et les compétences que je développe au fil de ma formation.
+        </p>
+
+        <div class="about-facts">
+          <div>
+            <span class="fact-number">01</span>
+            <span class="fact-label">Année d’études</span>
+          </div>
+          <div>
+            <span class="fact-number">GC</span>
+            <span class="fact-label">Domaine</span>
+          </div>
+          <div>
+            <span class="fact-number">MA</span>
+            <span class="fact-label">Maroc</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section-shell section-space" id="skills">
+      <div class="section-heading reveal">
+        <p class="section-index">02 / COMPÉTENCES</p>
+        <h2>Apprendre.<br />Pratiquer. Progresser.</h2>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <span class="card-number">01</span>
+          <div class="skill-icon" aria-hidden="true">∑</div>
+          <h3>Bases scientifiques</h3>
+          <p>Mathématiques, physique et raisonnement analytique développés en cycle préparatoire.</p>
+          <div class="skill-tags">
+            <span>Mathématiques</span>
+            <span>Physique</span>
+            <span>Mécanique</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal">
+          <span class="card-number">02</span>
+          <div class="skill-icon skill-icon-grid" aria-hidden="true">▦</div>
+          <h3>Outils & conception</h3>
+          <p>Ajoutez ici les logiciels et outils que vous utilisez réellement dans vos études.</p>
+          <div class="skill-tags">
+            <span>[AutoCAD]</span>
+            <span>[Excel]</span>
+            <span>[Autre outil]</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal">
+          <span class="card-number">03</span>
+          <div class="skill-icon skill-icon-arrow" aria-hidden="true">↗</div>
+          <h3>Savoir-être</h3>
+          <p>Une approche fondée sur la curiosité, l’organisation et l’envie d’apprendre.</p>
+          <div class="skill-tags">
+            <span>Rigueur</span>
+            <span>Esprit d’équipe</span>
+            <span>Curiosité</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects section-shell section-space" id="projects">
+      <div class="projects-heading reveal">
+        <div class="section-heading">
+          <p class="section-index">03 / PROJETS</p>
+          <h2>Du travail concret,<br />à mon échelle.</h2>
+        </div>
+        <p class="projects-note">
+          Remplacez ces exemples par vos travaux réels : projets de cours,
+          exercices de conception, maquettes ou travaux personnels.
+        </p>
+      </div>
+
+      <div class="project-list">
+        <article class="project-row reveal">
+          <span class="project-id">P — 01</span>
+          <div class="project-main">
+            <p class="project-type">PROJET ACADÉMIQUE · [ANNÉE]</p>
+            <h3>[Titre d’un projet ou travail de cours]</h3>
+            <p>Décrivez ici le problème étudié, votre démarche et ce que vous avez appris.</p>
+          </div>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </article>
+
+        <article class="project-row reveal">
+          <span class="project-id">P — 02</span>
+          <div class="project-main">
+            <p class="project-type">CONCEPTION · [ANNÉE]</p>
+            <h3>[Exercice de dessin ou de modélisation]</h3>
+            <p>Précisez les outils utilisés, votre rôle et le résultat obtenu.</p>
+          </div>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </article>
+
+        <article class="project-row reveal">
+          <span class="project-id">P — 03</span>
+          <div class="project-main">
+            <p class="project-type">PERSONNEL · [ANNÉE]</p>
+            <h3>[Une initiative ou un apprentissage personnel]</h3>
+            <p>Présentez une expérience qui montre votre motivation et votre progression.</p>
+          </div>
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section-shell section-space" id="contact">
+      <p class="section-index reveal">04 / CONTACT</p>
+      <div class="contact-panel reveal">
+        <div>
+          <p class="contact-kicker">UNE QUESTION, UNE OPPORTUNITÉ ?</p>
+          <h2>Construisons<br /><span>la suite.</span></h2>
+        </div>
+        <div class="contact-links">
+          <!-- Remplacez l'adresse ci-dessous par votre adresse e-mail. -->
+          <a class="contact-email" href="mailto:votre.email@example.com">
+            votre.email@example.com <span>↗</span>
+          </a>
+          <a
+            class="contact-linkedin"
+            href="https://www.linkedin.com/in/nizar-elkandoussi-9864162b2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Retrouvez-moi sur LinkedIn <span>↗</span>
+          </a>
+        </div>
+        <div class="contact-decoration" aria-hidden="true">N.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <a class="brand footer-brand" href="#top">
+      <span class="brand-mark">N<span>.</span></span>
+      <span class="brand-name">Nizar <strong>Elkandoussi</strong></span>
+    </a>
+    <p>Portfolio étudiant · Génie civil · <span id="current-year"></span></p>
+    <a class="back-top" href="#top">Retour en haut ↑</a>
+  </footer>
+</body>
+</html>
